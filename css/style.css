@@ -6,6 +6,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+
+}
+
 a {
   color: #000000;
   display: inline-block;
@@ -30,6 +35,7 @@ li {
 
 .header {
   background-color: #e8ebf1;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.07);
 }
 
 .header__inner {
@@ -42,7 +48,6 @@ li {
 .header__logo a {
   color: #2aacc8;
   font-size: 50px;
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
@@ -141,5 +146,48 @@ li {
   transition: all .3s;
   border-top: 5px solid #2aacc8;  
   background: #fff;
+}
+
+.slider {
+  background-color: #81e4ed;
+  padding: 20px 0 10px 0;
+}
+
+.slider__item {
+  background-image: url(../images/slider-bg.jpg);
+  min-height: 440px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider__item-title {
+  font-size: 50px;
+  color: #fff;
+  width: 300px;
+  margin-left: 60px;
+  font-weight: 700;
+  padding-top: 90px;
+}
+
+.slick-dots li button {
+  width: 14px;
+  height: 14px;
+  background-color: rgba(98, 98, 98, .5);
+  border-radius: 50%;
+}
+
+.slick-dots li button::before {
+  display: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #fff;
+}
+
+.slick-dots li {
+  width: auto;
+  height: auto;
+  margin: 0 9px;
 }
 
