@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-
+  line-height: 20px;
 }
 
 a {
@@ -83,6 +83,7 @@ li {
   border-top: none;
   box-shadow: 0px 5px 0px 0px rgba(42, 172, 200, 0.004);
   padding: 10px 5px;
+  z-index: 1;
 }
 
 .drop-down__list a {
@@ -163,6 +164,7 @@ li {
 
 .slider__item-title {
   font-size: 50px;
+  line-height: 55px;
   color: #fff;
   width: 300px;
   margin-left: 60px;
@@ -191,3 +193,67 @@ li {
   margin: 0 9px;
 }
 
+.items {
+  background-color: #e8ebf1;
+  padding: 60px 0 50px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.items__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 225px;
+  font-family: 'arial', sans-serif;
+}
+
+.item__title {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 0 0 60px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.item__icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2aacc8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.telegram-icons {
+  margin-left: 5px;
+}
+
+.item__text {
+  font-size: 13px;
+  color: #363636;
+  margin-bottom: 25px;
+}
+
+.item__link {
+  padding-left: 15px;
+  font-size: 13px;
+  color: #2aacc8;
+  position: relative;
+}
+
+.item__link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-image: url(../images/arrow-right.svg);
+  width: 5px;
+  height: 7px;
+}
